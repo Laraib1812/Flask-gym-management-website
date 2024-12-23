@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossFitGym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="/" class="logo-link">
+            <div class="logo"></div>
+        </a>
+
+        <!-- Title -->
+        <h2 class="title">
+            <span class="highlight">CrossFit</span> Gym Management System
+        </h2>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger-button" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="navbar-links">
+            <li class="menuLink"><a href="/" class="menu-item">Home</a></li>
+            <li class="menuLink"><a href="/about" class="menu-item">About</a></li>
+            <li class="menuLink"><a href="/membership" class="menu-item">Membership</a></li>
+            <li class="menuLink"><a href="/contact" class="menu-item">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-heading">Empower Your Gym Management</h1>
+                <p class="hero-description">Efficient tools for trainers, members, and operations.</p>
+                <a href="#features" class="learn-more-button">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="features-container">
+                <div class="features-header">
+                    <h2>Features</h2>
+                    <p>Discover tools to manage memberships, schedules, and more!</p>
+                </div>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <h3>Membership Management</h3>
+                        <p>Track members, subscriptions, and renewals seamlessly.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Trainer Scheduling</h3>
+                        <p>Easily manage trainer availability and class schedules.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Performance Tracking</h3>
+                        <p>Monitor progress and provide personalized feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section id="cta" class="cta-section">
+            <div class="cta-container">
+                <h2>Ready to Streamline Your Gym?</h2>
+                <p class="forPadding">Sign up today and see the difference!</p>
+                <a href="/signup" class="cta-button">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Muhammad Laraib. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+

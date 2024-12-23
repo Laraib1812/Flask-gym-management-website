@@ -1,0 +1,230 @@
+
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #000000, #fbff00);
+    color: #cbd5e1;
+    padding: 0.75rem 1rem;
+    /* margin-bottom: 1.25rem; */
+}
+
+.navbar .logo {
+    width: 4rem;
+    height: 4rem;
+    background-image: url('/static/images/crossfit.png');
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.navbar .title {
+    color: white;
+    font-size: 1.50rem;
+    /* display: block; */
+    text-align: left;
+    margin-right: 80px;
+
+}
+/* .title{
+    padding-left: 30%;
+} */
+
+.navbar .highlight {
+    color: #fbbf24; /* Yellow color for the highlight */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar .hamburger-button {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    display: none;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.navbar .navbar-links li {
+    margin-left: 1.5rem;
+}
+
+.navbar .navbar-links .menu-item {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-links .menu-item:hover {
+    color: #ffee00; /* Hover effect */
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .navbar .hamburger-button {
+        display: block;
+    }
+
+    .navbar .navbar-links {
+        display: none;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .navbar .navbar-links.active {
+        display: block;
+    }
+
+    .navbar .navbar-links li {
+        margin-top: 1rem;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #070707;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1e3a8a; /* Tailwind blue */
+    padding: 16px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 24px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: white;
+}
+
+/* Membership Plans Section */
+.membership-plans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+.plan {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.plan p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.plan ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.plan .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.plan .sign-up {
+    padding: 12px 24px;
+    background-color: #1e40af; /* Tailwind blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plan .sign-up:hover {
+    background-color: #2d3748; /* Tailwind gray */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Tailwind blue */
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .membership-plans {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

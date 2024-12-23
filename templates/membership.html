@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/member.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="/" class="logo-link">
+            <div class="logo"></div>
+        </a>
+
+        <!-- Title -->
+        <h2 class="title">
+            <span class="highlight">CrossFit</span> Gym Management System
+        </h2>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger-button" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="navbar-links">
+            <li class="menuLink"><a href="/" class="menu-item">Home</a></li>
+            <li class="menuLink"><a href="/about" class="menu-item">About</a></li>
+            <li class="menuLink"><a href="/membership" class="menu-item">Membership</a></li>
+            <li class="menuLink"><a href="/contact" class="menu-item">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="title">Choose Your Membership Plan</h1>
+            <p class="subtitle">Join us today and achieve your fitness goals with our tailored membership plans.</p>
+        </div>
+
+        <!-- Membership Plans Section -->
+        <div class="membership-plans">
+            <!-- Basic Plan -->
+            <div class="plan basic">
+                <h2>Basic Plan</h2>
+                <p>Ideal for beginners who want access to essential equipment and facilities.</p>
+                <ul>
+                    <li>✔️ Access to gym facilities</li>
+                    <li>✔️ Free group classes</li>
+                    <li>✔️ Basic trainer support</li>
+                </ul>
+                <p class="price">$150 / month</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="plan premium">
+                <h2>Premium Plan</h2>
+                <p>Perfect for fitness enthusiasts who want additional perks and trainer guidance.</p>
+                <ul>
+                    <li>✔️ Access to gym facilities</li>
+                    <li>✔️ Free group classes</li>
+                    <li>✔️ Personal training sessions</li>
+                    <li>✔️ Advanced equipment</li>
+                </ul>
+                <p class="price">$500 / month</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+
+            <!-- Elite Plan -->
+            <div class="plan elite">
+                <h2>Elite Plan</h2>
+                <p>Best for athletes and individuals aiming for top-level fitness with VIP support.</p>
+                <ul>
+                    <li>✔️ All Premium features</li>
+                    <li>✔️ VIP trainer access</li>
+                    <li>✔️ Custom workout plans</li>
+                    <li>✔️ Nutrition consultations</li>
+                </ul>
+                <p class="price">$1000 / month</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Muhammad Laraib. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

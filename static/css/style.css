@@ -1,0 +1,339 @@
+/* Hero Section Styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #070707;
+}
+
+.hero-section {
+    background-color: #000;
+    /* margin-top: 25px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-image: url('/static/images/download.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right top;/* Aligns the background image to the right */
+    /* margin: 20px; */
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.forPadding{
+    padding-bottom: 20px;
+}
+
+.hero-content {
+    background: linear-gradient(to right, #d9ff00, #fbff00c5);
+    border: 1px solid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.hero-heading {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align:start;
+}
+
+.hero-description {
+    color: #080808;
+    margin: 10px;
+    padding-bottom: 20px;
+
+}
+
+.learn-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: medium;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #4B5563;
+    transform: scale(1.05);
+}
+
+/* Features Section Styles */
+.features-section {
+    padding: 60px 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+.features-container {
+    background: linear-gradient(to right, #e5ff00da, #fbff00a1);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-header {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.features-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.features-header p {
+    color: white;
+    margin-top: 10px;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: semi-bold;
+}
+
+.feature-card p {
+    color: #D1D5DB;
+    margin-top: 10px;
+}
+
+/* Call-to-Action Section Styles */
+.cta-section {
+    padding: 60px 0;
+    background-color: black;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    background-color: #020202;
+}
+
+
+.cta-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta-container p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: medium;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4B5563;
+    transform: scale(1.05);
+}
+
+  /* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #000000, #fbff00);
+    color: #cbd5e1;
+    padding: 0.75rem 1rem;
+    /* margin-bottom: 1.25rem; */
+}
+
+.navbar .logo {
+    width: 4rem;
+    height: 4rem;
+    background-image: url('/static/images/crossfit.png');
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.navbar .title {
+    color: white;
+    font-size: 1.50rem;
+    /* display: block; */
+    text-align: left;
+    margin-right: 80px;
+
+}
+/* .title{
+    padding-left: 30%;
+} */
+
+.navbar .highlight {
+    color: #fbbf24; /* Yellow color for the highlight */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar .hamburger-button {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    display: none;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.navbar .navbar-links li {
+    margin-left: 1.5rem;
+}
+
+.navbar .navbar-links .menu-item {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-links .menu-item:hover {
+    color: #ffee00; /* Hover effect */
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .navbar .hamburger-button {
+        display: block;
+    }
+
+    .navbar .navbar-links {
+        display: none;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .navbar .navbar-links.active {
+        display: block;
+    }
+
+    .navbar .navbar-links li {
+        margin-top: 1rem;
+    }
+}
+/* Footer Styles */
+.footer {
+    background-color: black;
+    border: 1px ;
+    color: white;
+    font-size: 1rem; /* Text size for smaller screens */
+    text-align: center;
+    padding: 2rem 0; /* Vertical padding for the footer */
+    margin-top: 1.25rem;
+}
+
+a{
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        font-size: 1.25rem; /* Text size for larger screens */
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1e3a8a; /* Tailwind blue */
+    padding: 16px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 24px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: white;
+}

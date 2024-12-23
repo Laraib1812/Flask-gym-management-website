@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="/" class="logo-link">
+            <div class="logo"></div>
+        </a>
+
+        <!-- Title -->
+        <h2 class="title">
+            <span class="highlight">CrossFit</span> Gym Management System
+        </h2>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger-button" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="navbar-links">
+            <li class="menuLink"><a href="/" class="menu-item">Home</a></li>
+            <li class="menuLink"><a href="/about" class="menu-item">About</a></li>
+            <li class="menuLink"><a href="/membership" class="menu-item">Membership</a></li>
+            <li class="menuLink"><a href="/contact" class="menu-item">Contact Us</a></li>
+        </ul>
+    </nav>>
+
+    <main class="contact-main">
+        <div class="contact-form-container">
+            <h1 class="contact-title">Contact Us</h1>
+            <p class="contact-subtitle">
+                We'd love to hear from you! Reach out to us with your questions or feedback.
+            </p>
+
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        class="form-input"
+                        placeholder="Ali"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-input"
+                        placeholder="example@gmail.com"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                        id="message"
+                        class="form-input"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Muhammad Laraib. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

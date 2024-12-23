@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="/" class="logo-link">
+            <div class="logo"></div>
+        </a>
+
+        <!-- Title -->
+        <h2 class="title">
+            <span class="highlight">CrossFit</span> Gym Management System
+        </h2>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger-button" aria-label="Toggle Menu">
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="navbar-links">
+            <li class="menuLink"><a href="/" class="menu-item">Home</a></li>
+            <li class="menuLink"><a href="/about" class="menu-item">About</a></li>
+            <li class="menuLink"><a href="/membership" class="menu-item">Membership</a></li>
+            <li class="menuLink"><a href="/contact" class="menu-item">Contact Us</a></li>
+        </ul>
+    </nav>>
+
+    <main class="main-content">
+        <!-- About Us Section -->
+        <div class="about-us-section">
+            <div class="section-container">
+                <div class="section-bg">
+                    <h1 class="section-title">About Us</h1>
+                    <p class="section-subtitle">
+                        CrossFitGym is dedicated to helping you achieve your fitness goals with state-of-the-art equipment and professional trainers.
+                    </p>
+                </div>
+            </div>
+
+        <!-- Mission and Values Section -->
+        <div class="mission-values-section">
+            <!-- Mission Section -->
+            <div class="mission">
+                <h2 class="sub-title">Our Mission</h2>
+                <p class="section-text">
+                    At CrossFitGym, our mission is to inspire and empower individuals to lead healthier and more fulfilling lives. We believe fitness is not just about building muscles or losing weight—it’s about improving your overall well-being, boosting confidence, and achieving balance in life.
+                </p>
+            </div>
+
+            <!-- Values Section -->
+            <div class="values">
+                <h2 class="sub-title">Our Values</h2>
+                <p class="section-text">
+                    Commitment: We are dedicated to helping you achieve your fitness goals. Community: We believe in building strong relationships and fostering a sense of belonging. Excellence: We continuously strive to improve and provide the best experience for our members.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Muhammad Laraib. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
